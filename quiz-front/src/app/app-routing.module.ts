@@ -4,13 +4,16 @@ import { InscriptionComponent } from './inscription/inscription.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { ConnexionComponent } from './connexion/connexion.component';
 import { ThemesListComponent } from './themes-list/themes-list.component';
+import { CreateQuizComponent } from './create-quiz/create-quiz.component';
+
 
 const routes: Routes = [
   { path: '', component: AccueilComponent},
   { path: 'accueil', component: AccueilComponent},
   { path: 'inscription', component: InscriptionComponent },
   { path: 'connexion', component: ConnexionComponent},
-  { path: 'themes-list', component: ThemesListComponent}
+  { path: 'themes-list', component: ThemesListComponent},
+  { path: 'create-quiz', component: CreateQuizComponent}
 ];
 
 @NgModule({

@@ -1,0 +1,41 @@
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+    <img
+      width="90"
+      alt="Quiz Logo"
+      src="../assets/images/png-clipart-quiz.png"
+    />
+</div>
+<div class="quiz">
+    <div class="body">
+    <div class="container">
+        <h1>Créer un Quiz</h1>
+
+        <form (ngSubmit)="onSubmit()">
+            <div class="form-group">
+            <label for="theme">Thème</label>
+            <select id="theme" name="theme" ngModel>
+                <option value="Sport">Sport</option>
+                <option value="CultureGenerale">Culture Générale</option>
+                <option value="Histoire">Histoire</option>
+                <option value="Cinema">Cinéma</option>
+                <option value="Musique">Musique</option>
+            </select>
+            </div>
+
+            <div class="form-group">
+            <label for="description">Description</label>
+            <textarea id="description" name="description" ngModel></textarea>
+            </div>
+
+            <div class="form-group">
+            <label for="image">Image</label>
+            <input type="file" id="image" name="image" ngModel>
+            </div>
+            <div id="addButon"><button>Ajouter une question</button></div>
+            <button type="submit">Créer</button>
+        </form>
+    </div>
+</div>
+</div>
+
