@@ -8,6 +8,7 @@ import { InscriptionComponent } from './inscription/inscription.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { ConnexionComponent } from './connexion/connexion.component';
 import { ThemesListComponent } from './themes-list/themes-list.component';
+import { CreateThemesListComponent } from './create-themes-list/create-themes-list.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ThemesListComponent } from './themes-list/themes-list.component';
     InscriptionComponent,
     AccueilComponent,
     ConnexionComponent,
-    ThemesListComponent
+    ThemesListComponent,
+    CreateThemesListComponent
   ],
   imports: [
     BrowserModule,
