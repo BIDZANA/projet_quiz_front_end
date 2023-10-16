@@ -8,7 +8,8 @@ import { InscriptionComponent } from './inscription/inscription.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { ConnexionComponent } from './connexion/connexion.component';
 import { ThemesListComponent } from './themes-list/themes-list.component';
-import { CreateThemesListComponent } from './create-themes-list/create-themes-list.component';
+import { CreateQuizComponent } from './create-quiz/create-quiz.component';
+import { CreateQuestionsComponent } from './create-questions/create-questions.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { CreateThemesListComponent } from './create-themes-list/create-themes-li
     AccueilComponent,
     ConnexionComponent,
     ThemesListComponent,
-    CreateThemesListComponent
+    CreateQuizComponent,
+    CreateQuestionsComponent,
   ],
   imports: [
     BrowserModule,
