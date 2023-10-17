@@ -20,4 +20,9 @@ export class InscriptionComponent {
     // Rediriger l'utilisateur vers la page de connexion
     this.router.navigate(['/connexion']);
   }
+  redirigerVersConnexion() {
+    // Redirigez l'utilisateur vers la page connexion (ajustez le chemin selon votre configuration)
+    this.router.navigate(['/connexion']);
+  }
 }
+

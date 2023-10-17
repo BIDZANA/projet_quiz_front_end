@@ -19,4 +19,9 @@ export class ConnexionComponent {
     // Rediriger l'utilisateur vers la page de connexion
     this.router.navigate(['/themes-list']);
   }
+
+  redirigerVersThemes() {
+    // Redirigez l'utilisateur vers la page connexion (ajustez le chemin selon votre configuration)
+    this.router.navigate(['/themes-list']);
+  }
 }

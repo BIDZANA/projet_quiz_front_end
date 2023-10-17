@@ -8,6 +8,9 @@ import { InscriptionComponent } from './inscription/inscription.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { ConnexionComponent } from './connexion/connexion.component';
 import { ThemesListComponent } from './themes-list/themes-list.component';
+import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
+
 
 @NgModule({
   declarations: [
@@ -15,12 +18,15 @@ import { ThemesListComponent } from './themes-list/themes-list.component';
     InscriptionComponent,
     AccueilComponent,
     ConnexionComponent,
-    ThemesListComponent
+    ThemesListComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    MatIconModule, // Module des icônes
+    MatMenuModule, // Module des menus
   ],
   providers: [],
   bootstrap: [AppComponent]

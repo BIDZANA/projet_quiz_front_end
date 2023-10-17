@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./themes-list.component.scss']
 })
 export class ThemesListComponent {
+  isMenuOpen = false;
 
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+    console.log(this.isMenuOpen);
+  }
+
+  logout() {
+    // Votre code de déconnexion ici
+  }
+
+ 
 }
