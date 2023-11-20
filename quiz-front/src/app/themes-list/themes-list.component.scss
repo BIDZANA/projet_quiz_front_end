@@ -471,7 +471,7 @@ button[type="submit"]:hover {
 .quarter-circle1{
   width: 150px;
   height: 200px;
-  background-color: #ff7300;
+  background-color: #ef8d3d;
   border-bottom-right-radius: 150px;
   border:solid;
   float: left;
@@ -480,6 +480,47 @@ button[type="submit"]:hover {
 .bouton1{
   background-color: #ff8400; /* Couleur orangée pastel */
   color: rgba(10, 10, 10, 0.94);
+  padding: 10px 20px;
+  margin-left: 60%;
+  border:none;
+  border-radius: 0% 30% 0% 30%;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.rectangle2 {
+  width: 150%;
+  height: 104%;
+  background-color: rgba(96, 181, 213, 0.6); /* Couleur du rectangle */
+  border-radius: 0% 15% 10% 0%;
+  box-shadow: 5px 5px 18px #6ba2e0;;
+  position: absolute;
+  display: flex;
+
+  flex-direction: row;
+
+}
+
+
+.container2 {
+  position: relative;
+  width: 300px; /* Largeur du rectangle */
+  height: 200px; /* Hauteur du rectangle */
+  top: 250px;
+}
+.quarter-circle2{
+  width: 150px;
+  height: 200px;
+  background-color: #bcd2ce;
+  border-bottom-right-radius: 150px;
+  border:solid;
+  float: left;
+
+}
+.bouton2{
+  background-color: #cad9e3; /* Couleur orangée pastel */
+  color: rgb(255, 255, 255);
   padding: 10px 20px;
   margin-left: 60%;
   border:none;
