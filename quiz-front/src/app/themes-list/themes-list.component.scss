@@ -389,6 +389,7 @@ svg#clouds {
   position: relative;
   width: 300px; /* Largeur du rectangle */
   height: 200px; /* Hauteur du rectangle */
+  top: 50px;
 
 }
 body{
@@ -446,4 +447,44 @@ img {
 }
 button[type="submit"]:hover {
   background-color: #ff4c3a; /* Couleur orangée pastel plus foncée */
+}
+.rectangle1 {
+  width: 150%;
+  height: 104%;
+  background-color: rgba(208, 114, 38, 0.38); /* Couleur du rectangle */
+  border-radius: 0% 15% 10% 0%;
+  box-shadow: 5px 5px 18px #e0ae6b;;
+  position: absolute;
+  display: flex;
+
+  flex-direction: row;
+
+}
+
+
+.container1 {
+  position: relative;
+  width: 300px; /* Largeur du rectangle */
+  height: 200px; /* Hauteur du rectangle */
+  top: 150px;
+}
+.quarter-circle1{
+  width: 150px;
+  height: 200px;
+  background-color: #ff7300;
+  border-bottom-right-radius: 150px;
+  border:solid;
+  float: left;
+
+}
+.bouton1{
+  background-color: #ff8400; /* Couleur orangée pastel */
+  color: rgba(10, 10, 10, 0.94);
+  padding: 10px 20px;
+  margin-left: 60%;
+  border:none;
+  border-radius: 0% 30% 0% 30%;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
 }
