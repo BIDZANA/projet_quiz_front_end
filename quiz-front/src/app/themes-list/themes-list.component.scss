@@ -357,7 +357,7 @@ svg#clouds {
     visibility: hidden;
   }
 
-  
+
 }
 .dropdown-menu {
   display: none;
@@ -377,11 +377,73 @@ svg#clouds {
   background-color: #f0f0f0;
 }
 .dropdown{
-  margin-left: auto; 
+  margin-left: auto;
 }
 
 .userimage1{
-  
+
   width: 50px;
 }
 
+.container {
+  position: relative;
+  width: 300px; /* Largeur du rectangle */
+  height: 200px; /* Hauteur du rectangle */
+
+}
+body{
+  font-family: 'Amasis MT Pro Black', sans-serif;
+}
+
+.rectangle {
+  width: 150%;
+  height: 104%;
+  background-color: #6dddec60; /* Couleur du rectangle */
+  border-radius: 0% 15% 10% 0%;
+  box-shadow: 5px 5px 18px #9eb1b1;;
+  position: absolute;
+  display: flex;
+
+  flex-direction: row;
+
+}
+
+
+.quarter-circle {
+  width: 150px;
+  height: 200px;
+  background-color: aquamarine;
+  border-bottom-right-radius: 150px;
+  border:solid;
+  float: left;
+
+}
+img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover; /* Ajuste l'image pour qu'elle remplisse le cercle */
+}
+
+.sport{
+
+  color: #1f2020e7;
+  float: left;
+  margin-top: auto;
+  margin-left: 200px;
+  position: absolute;
+  width: 200px;
+}
+.bouton{
+  background-color: #a9f1dc; /* Couleur orangée pastel */
+  color: #5a4848;
+  padding: 10px 20px;
+  margin-left: 60%;
+  border:none;
+  border-radius: 0% 30% 0% 30%;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+button[type="submit"]:hover {
+  background-color: #ff4c3a; /* Couleur orangée pastel plus foncée */
+}
