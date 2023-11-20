@@ -529,3 +529,83 @@ button[type="submit"]:hover {
   font-size: 18px;
   transition: background-color 0.3s;
 }
+
+.rectangle3 {
+  width: 150%;
+  height: 104%;
+  background-color: rgba(205, 174, 211, 0.81); /* Couleur du rectangle */
+  border-radius: 0% 15% 10% 0%;
+  box-shadow: 5px 5px 18px #b16be0;;
+  position: absolute;
+  display: flex;
+
+  flex-direction: row;
+
+}
+
+.container3 {
+  position: relative;
+  width: 300px; /* Largeur du rectangle */
+  height: 200px; /* Hauteur du rectangle */
+  top: 350px;
+}
+.quarter-circle3{
+  width: 150px;
+  height: 200px;
+  background-color: #dbd4e3;
+  border-bottom-right-radius: 150px;
+  border:solid;
+  float: left;
+
+}
+.bouton3{
+  background-color: #9b58b7; /* Couleur orangée pastel */
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  margin-left: 60%;
+  border:none;
+  border-radius: 0% 30% 0% 30%;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.rectangle4 {
+  width: 150%;
+  height: 104%;
+  background-color: rgba(229, 210, 116, 0.93); /* Couleur du rectangle */
+  border-radius: 0% 15% 10% 0%;
+  box-shadow: 5px 5px 18px #c9b344;;
+  position: absolute;
+  display: flex;
+
+  flex-direction: row;
+
+}
+
+.container4 {
+  position: relative;
+  width: 300px; /* Largeur du rectangle */
+  height: 200px; /* Hauteur du rectangle */
+  top: 450px;
+}
+.quarter-circle4{
+  width: 150px;
+  height: 200px;
+  background-color: rgba(241, 233, 207, 0.9);
+  border-bottom-right-radius: 150px;
+  border:solid;
+  float: left;
+
+}
+.bouton4{
+  background-color: rgba(224, 214, 156, 0.99); /* Couleur orangée pastel */
+  color: rgba(10, 10, 10, 0.94);
+  padding: 10px 20px;
+  margin-left: 60%;
+  border:none;
+  border-radius: 0% 30% 0% 30%;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
