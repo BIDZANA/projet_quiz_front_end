@@ -8,6 +8,7 @@ import { QuizzHistoireComponent } from './quizz-histoire/quizz-histoire.componen
 import { QuizzSportComponent } from './quizz-sport/quizz-sport.component';
 import { QuizzCulturegeneraleComponent } from './quizz-culturegenerale/quizz-culturegenerale.component';
 import { QuizzCinemaComponent } from './quizz-cinema/quizz-cinema.component';
+import { QuizzMusiqueComponent } from './quizz-musique/quizz-musique.component';
 
 const routes: Routes = [
   { path: '', component: AccueilComponent},
@@ -18,7 +19,8 @@ const routes: Routes = [
   { path: 'quizzhistoire', component: QuizzHistoireComponent},
   { path: 'quizzsport', component: QuizzSportComponent},
   {path: 'quizzculturegenerale', component: QuizzCulturegeneraleComponent},
-  {path: 'quizzcinema', component: QuizzCinemaComponent}
+  {path: 'quizzcinema', component: QuizzCinemaComponent},
+  {path: 'quizzmusique', component: QuizzMusiqueComponent}
 ];
 
 @NgModule({
