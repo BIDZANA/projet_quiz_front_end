@@ -27,4 +27,10 @@ export class ThemesListComponent {
     
     this.router.navigate(['/quizzsport']);
   }
+
+  redirigerVersQuizzCulture() {
+    
+    this.router.navigate(['/quizzculturegenerale']);
+  }
+
 }

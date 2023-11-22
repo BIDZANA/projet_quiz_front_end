@@ -12,6 +12,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { QuizzHistoireComponent } from './quizz-histoire/quizz-histoire.component';
 import { QuizzSportComponent } from './quizz-sport/quizz-sport.component';
+import { QuizzCulturegeneraleComponent } from './quizz-culturegenerale/quizz-culturegenerale.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { QuizzSportComponent } from './quizz-sport/quizz-sport.component';
     ThemesListComponent,
     QuizzHistoireComponent,
     QuizzSportComponent,
+    QuizzCulturegeneraleComponent,
     
   ],
   imports: [
