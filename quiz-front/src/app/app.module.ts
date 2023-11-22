@@ -13,6 +13,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { QuizzHistoireComponent } from './quizz-histoire/quizz-histoire.component';
 import { QuizzSportComponent } from './quizz-sport/quizz-sport.component';
 import { QuizzCulturegeneraleComponent } from './quizz-culturegenerale/quizz-culturegenerale.component';
+import { QuizzCinemaComponent } from './quizz-cinema/quizz-cinema.component';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { QuizzCulturegeneraleComponent } from './quizz-culturegenerale/quizz-cul
     QuizzHistoireComponent,
     QuizzSportComponent,
     QuizzCulturegeneraleComponent,
+    QuizzCinemaComponent,
     
   ],
   imports: [
