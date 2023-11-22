@@ -321,7 +321,7 @@
 .card {
     perspective: 1000px;
     width: 300px; /* Adjust the width as needed */
-    height: 200px; /* Adjust the height as needed */
+    height: 260px; /* Adjust the height as needed */
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.5s;
@@ -332,7 +332,7 @@
     }
   
     .card-inner {
-      width: 100%;
+      width: 190%;
       height: 100%;
       transform-style: preserve-3d;
       transition: transform 0.5s;
@@ -353,7 +353,7 @@
       transform: rotateY(180deg);
     }
 }
-  .bouton2{
+.bouton2{
     background-color: #cad9e3; /* Couleur orangée pastel */
     color: rgb(255, 255, 255);
     padding: 10px 20px;
