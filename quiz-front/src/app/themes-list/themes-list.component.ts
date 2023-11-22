@@ -23,5 +23,8 @@ export class ThemesListComponent {
     
     this.router.navigate(['/quizzhistoire']);
   }
- 
+  redirigerVersQuizzSport() {
+    
+    this.router.navigate(['/quizzsport']);
+  }
 }

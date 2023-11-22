@@ -11,6 +11,7 @@ import { ThemesListComponent } from './themes-list/themes-list.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { QuizzHistoireComponent } from './quizz-histoire/quizz-histoire.component';
+import { QuizzSportComponent } from './quizz-sport/quizz-sport.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { QuizzHistoireComponent } from './quizz-histoire/quizz-histoire.componen
     ConnexionComponent,
     ThemesListComponent,
     QuizzHistoireComponent,
+    QuizzSportComponent,
     
   ],
   imports: [

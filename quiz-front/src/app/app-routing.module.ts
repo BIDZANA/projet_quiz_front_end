@@ -5,7 +5,7 @@ import { AccueilComponent } from './accueil/accueil.component';
 import { ConnexionComponent } from './connexion/connexion.component';
 import { ThemesListComponent } from './themes-list/themes-list.component';
 import { QuizzHistoireComponent } from './quizz-histoire/quizz-histoire.component';
-
+import { QuizzSportComponent } from './quizz-sport/quizz-sport.component';
 
 const routes: Routes = [
   { path: '', component: AccueilComponent},
@@ -14,6 +14,7 @@ const routes: Routes = [
   { path: 'connexion', component: ConnexionComponent},
   { path: 'themes-list', component: ThemesListComponent},
   { path: 'quizzhistoire', component: QuizzHistoireComponent},
+  { path: 'quizzsport', component: QuizzSportComponent},
 ];
 
 @NgModule({
