@@ -4,7 +4,7 @@ import { InscriptionComponent } from './inscription/inscription.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { ConnexionComponent } from './connexion/connexion.component';
 import { ThemesListComponent } from './themes-list/themes-list.component';
-
+import { QuizzHistoireComponent } from './quizz-histoire/quizz-histoire.component';
 
 
 const routes: Routes = [
@@ -13,7 +13,7 @@ const routes: Routes = [
   { path: 'inscription', component: InscriptionComponent },
   { path: 'connexion', component: ConnexionComponent},
   { path: 'themes-list', component: ThemesListComponent},
-
+  { path: 'quizzhistoire', component: QuizzHistoireComponent},
 ];
 
 @NgModule({

@@ -10,6 +10,7 @@ import { ConnexionComponent } from './connexion/connexion.component';
 import { ThemesListComponent } from './themes-list/themes-list.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
+import { QuizzHistoireComponent } from './quizz-histoire/quizz-histoire.component';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { MatMenuModule } from '@angular/material/menu';
     AccueilComponent,
     ConnexionComponent,
     ThemesListComponent,
+    QuizzHistoireComponent,
     
   ],
   imports: [
