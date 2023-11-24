@@ -15,6 +15,9 @@ import { QuizzSportComponent } from './quizz-sport/quizz-sport.component';
 import { QuizzCulturegeneraleComponent } from './quizz-culturegenerale/quizz-culturegenerale.component';
 import { QuizzCinemaComponent } from './quizz-cinema/quizz-cinema.component';
 import { QuizzMusiqueComponent } from './quizz-musique/quizz-musique.component';
+import { CreateQuestionsComponent } from './create-questions/create-questions.component';
+import { CreateQuizzComponent } from './create-quizz/create-quizz.component';
+
 
 
 @NgModule({
@@ -29,6 +32,9 @@ import { QuizzMusiqueComponent } from './quizz-musique/quizz-musique.component';
     QuizzCulturegeneraleComponent,
     QuizzCinemaComponent,
     QuizzMusiqueComponent,
+    CreateQuestionsComponent,
+    CreateQuizzComponent,
+   
     
   ],
   imports: [
