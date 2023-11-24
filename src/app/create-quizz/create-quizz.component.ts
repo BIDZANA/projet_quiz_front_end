@@ -1,3 +1,5 @@
+// create-quizz.component.ts
+
 import { Component } from '@angular/core';
 import { QuizServiceService } from '../services/quiz/quiz-service.service';
 import { Quiz } from '../models/Quiz/quiz';
@@ -10,15 +12,7 @@ import { Quiz } from '../models/Quiz/quiz';
 export class CreateQuizzComponent {
   isMenuOpen = false;
 
-  toggleMenu() {
-    this.isMenuOpen = !this.isMenuOpen;
-    console.log(this.isMenuOpen);
-  }
-
-  logout() {
-    // Votre code de déconnexion ici
-  }
-
+  // Modèle pour les données du formulaire
   formData: Quiz = {
     theme: '',
     description: '',
@@ -27,7 +21,12 @@ export class CreateQuizzComponent {
 
   constructor(private quizService: QuizServiceService) { }
 
-  // Exemple d'utilisation dans un composant
+  onSubmit() {
+    console.log('Formulaire soumis avec les données suivantes :', this.formData);
+    this.createQuiz();
+  }
+
+  // Fonction pour créer le quiz en utilisant le service
   createQuiz() {
     this.quizService.createQuiz(this.formData).subscribe(
       createdQuiz => {
@@ -41,8 +40,14 @@ export class CreateQuizzComponent {
     );
   }
 
-  onSubmit() {
-    console.log('Formulaire soumis avec les données suivantes :', this.formData);
-    this.createQuiz(); // Appel de la fonction createQuiz lors de la soumission du formulaire
+  // Fonction pour basculer l'état du menu
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+    console.log(this.isMenuOpen);
+  }
+
+  // Fonction de déconnexion
+  logout() {
+    // Votre code de déconnexion ici
   }
 }
