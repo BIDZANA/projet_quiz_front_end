@@ -15,6 +15,7 @@ import { QuizzSportComponent } from './quizz-sport/quizz-sport.component';
 import { QuizzCulturegeneraleComponent } from './quizz-culturegenerale/quizz-culturegenerale.component';
 import { QuizzCinemaComponent } from './quizz-cinema/quizz-cinema.component';
 import { QuizzMusiqueComponent } from './quizz-musique/quizz-musique.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import { QuizzMusiqueComponent } from './quizz-musique/quizz-musique.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     FormsModule,
     MatIconModule, // Module des icônes
     MatMenuModule, // Module des menus
