@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-create-quizz',
@@ -17,7 +18,7 @@ export class CreateQuizzComponent {
     // Votre code de déconnexion ici
   }
   
-  
+  constructor(private router: Router) {}
   formData = {
     theme: '',
     description: '',
@@ -26,5 +27,10 @@ export class CreateQuizzComponent {
 
   onSubmit() {
     console.log('Formulaire soumis avec les données suivantes :', this.formData);
+  }
+
+  redirigerVersQuestions() {
+    // Redirigez l'utilisateur vers la page connexion (ajustez le chemin selon votre configuration)
+    this.router.navigate(['/create-questions']);
   }
 }
