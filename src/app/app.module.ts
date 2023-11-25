@@ -17,6 +17,7 @@ import { QuizzCinemaComponent } from './quizz-cinema/quizz-cinema.component';
 import { QuizzMusiqueComponent } from './quizz-musique/quizz-musique.component';
 import { CreateQuestionsComponent } from './create-questions/create-questions.component';
 import { CreateQuizzComponent } from './create-quizz/create-quizz.component';
+import { InterfaceAdminComponent } from './interface-admin/interface-admin.component';
 
 
 
@@ -34,6 +35,7 @@ import { CreateQuizzComponent } from './create-quizz/create-quizz.component';
     QuizzMusiqueComponent,
     CreateQuestionsComponent,
     CreateQuizzComponent,
+    InterfaceAdminComponent,
    
     
   ],
