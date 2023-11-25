@@ -19,6 +19,7 @@ import { CreateQuestionsComponent } from './create-questions/create-questions.co
 import { CreateQuizzComponent } from './create-quizz/create-quizz.component';
 import { InterfaceAdminComponent } from './interface-admin/interface-admin.component';
 
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -42,6 +43,7 @@ import { InterfaceAdminComponent } from './interface-admin/interface-admin.compo
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     FormsModule,
     MatIconModule, // Module des icônes
     MatMenuModule, // Module des menus
