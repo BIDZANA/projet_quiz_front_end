@@ -12,6 +12,8 @@ import { QuizzMusiqueComponent } from './quizz-musique/quizz-musique.component';
 import { CreateQuestionsComponent } from './create-questions/create-questions.component';
 import { CreateQuizzComponent } from './create-quizz/create-quizz.component';
 import { InterfaceAdminComponent } from './interface-admin/interface-admin.component';
+import { ListeJoueursComponent } from './liste-joueurs/liste-joueurs.component';
+import { ListeJeuxComponent } from './liste-jeux/liste-jeux.component';
 import { VerificationComponent } from './verification/verification.component';
 
 const routes: Routes = [
@@ -27,8 +29,7 @@ const routes: Routes = [
   {path: 'quizzmusique', component: QuizzMusiqueComponent},
   {path: 'create-questions', component: CreateQuestionsComponent},
   {path: 'create-quizz', component: CreateQuizzComponent},
-  {path: 'interfaceadmin', component: InterfaceAdminComponent},
-  { path: 'verification', component: VerificationComponent }
+  {path: 'interfaceadmin', component: InterfaceAdminComponent}
  
 ];
 

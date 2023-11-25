@@ -30,5 +30,12 @@ export class InterfaceAdminComponent {
     // Redirigez l'utilisateur vers la page connexion (ajustez le chemin selon votre configuration)
     this.router.navigate(['/create-quizz']);
   }
-   
+  redirigerVersListeJoueurs() {
+    // Redirigez l'utilisateur vers la page connexion (ajustez le chemin selon votre configuration)
+    this.router.navigate(['/listejoueurs']);
+  }
+  redirigerVersListeJeux() {
+    // Redirigez l'utilisateur vers la page connexion (ajustez le chemin selon votre configuration)
+    this.router.navigate(['/listejeux']);
+  }
 }

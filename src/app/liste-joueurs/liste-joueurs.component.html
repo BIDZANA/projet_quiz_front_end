@@ -39,53 +39,30 @@
     </svg>
 </div>
 <div>
-    <h1>Bienvenue admin</h1>
+    <h1>Voici la liste des joueurs</h1>
 </div>
 <br>
 <br>
-<div class="admin">
-    <div class="badmin">
-        <div class="card" (click)="flipCard()">
-            <div class="card-inner">
-              <div class="front">
-                <img src="../assets/images/joueur.png" alt="Card Front" />
-              </div>
-              <div class="back">
-                <button class="bouton5" (click)="redirigerVersListeJoueurs()">liste des joueurs</button>
-              </div>
-            </div>
-        </div>
-        <div><h2>Joueurs</h2></div>
+<div class="bloc">
+    <div class="table-container">
+
+     
+      <table>
+        <thead>
+        <tr>
+          <th style="color: orange;">Noms</th> 
+          <th style="color: orange;">emails</th> 
+         
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>John Doe</td>
+          <td>johndoe@gmail.com/td>
+         
+        </tr>
+       
+        </tbody>
+      </table>
     </div>
-    <div class="badmin">
-        <div class="card" (click)="flipCard()">
-            <div class="card-inner">
-              <div class="front">
-                <img src="../assets/images/party.png" alt="Card Front" />
-              </div>
-              <div class="back">
-                <button class="bouton5" (click)="redirigerVersListeJeux()">liste des jeux</button>
-              </div>
-            </div>
-        </div>
-        <div><h2>listes de jeux</h2></div>
-    </div>
-    <div class="badmin">
-        <div class="card" (click)="flipCard()">
-            <div class="card-inner">
-              <div class="front">
-                <img src="../assets/images/quizz.png" alt="Card Front" />
-              </div>
-              <div class="back">
-                <button class="bouton5" (click)="redirigerVersCreateQuizz()">Creer un quizz</button>
-              </div>
-            </div>
-        </div>
-        <div><h2>Creer un Quizz</h2></div>
-    </div>
-</div>
-
-
-
-  
-
+  </div>

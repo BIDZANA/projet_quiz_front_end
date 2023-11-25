@@ -20,6 +20,8 @@ import { CreateQuizzComponent } from './create-quizz/create-quizz.component';
 import { InterfaceAdminComponent } from './interface-admin/interface-admin.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { ListeJoueursComponent } from './liste-joueurs/liste-joueurs.component';
+import { ListeJeuxComponent } from './liste-jeux/liste-jeux.component';
 import { VerificationComponent } from './verification/verification.component';
 
 
@@ -38,7 +40,6 @@ import { VerificationComponent } from './verification/verification.component';
     CreateQuestionsComponent,
     CreateQuizzComponent,
     InterfaceAdminComponent,
-    VerificationComponent,
    
     
   ],

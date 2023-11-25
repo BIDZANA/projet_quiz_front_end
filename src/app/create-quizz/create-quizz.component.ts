@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { QuizServiceService } from '../services/quiz/quiz-service.service';
 import { Quiz } from '../models/Quiz/quiz';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-create-quizz',
@@ -19,7 +18,7 @@ export class CreateQuizzComponent {
     image: ''
   };
 
-  constructor(private quizService: QuizServiceService, private router: Router) { }
+  constructor(private quizService: QuizServiceService) { }
 
   onSubmit() {
     console.log('Formulaire soumis avec les données suivantes :', this.formData);
@@ -54,4 +53,11 @@ export class CreateQuizzComponent {
   logout() {
     // Votre code de déconnexion ici
   }
+  
+  
+  redirigerVersQuestions() {
+    // Redirigez l'utilisateur vers la page connexion (ajustez le chemin selon votre configuration)
+    this.router.navigate(['/create-questions']);
+  }
+  
 }
