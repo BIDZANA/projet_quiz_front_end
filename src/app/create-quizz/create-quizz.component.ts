@@ -50,15 +50,4 @@ export class CreateQuizzComponent {
   logout() {
     // Votre code de déconnexion ici
   }
-  
-  
-  formData = {
-    theme: '',
-    description: '',
-    image: '',
-  };
-
-  onSubmit() {
-    console.log('Formulaire soumis avec les données suivantes :', this.formData);
-  }
 }
