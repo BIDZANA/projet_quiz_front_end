@@ -21,6 +21,7 @@ import { InterfaceAdminComponent } from './interface-admin/interface-admin.compo
 
 import { HttpClientModule } from '@angular/common/http';
 import { ListeJoueursComponent } from './liste-joueurs/liste-joueurs.component';
+import { ListeJeuxComponent } from './liste-jeux/liste-jeux.component';
 
 
 @NgModule({
@@ -39,6 +40,7 @@ import { ListeJoueursComponent } from './liste-joueurs/liste-joueurs.component';
     CreateQuizzComponent,
     InterfaceAdminComponent,
     ListeJoueursComponent,
+    ListeJeuxComponent,
    
     
   ],

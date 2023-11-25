@@ -13,6 +13,7 @@ import { CreateQuestionsComponent } from './create-questions/create-questions.co
 import { CreateQuizzComponent } from './create-quizz/create-quizz.component';
 import { InterfaceAdminComponent } from './interface-admin/interface-admin.component';
 import { ListeJoueursComponent } from './liste-joueurs/liste-joueurs.component';
+import { ListeJeuxComponent } from './liste-jeux/liste-jeux.component';
 
 const routes: Routes = [
   { path: '', component: AccueilComponent},
@@ -29,7 +30,7 @@ const routes: Routes = [
   {path: 'create-quizz', component: CreateQuizzComponent},
   {path: 'interfaceadmin', component: InterfaceAdminComponent},
   {path: 'listejoueurs', component: ListeJoueursComponent},
- 
+  {path: 'listejeux', component: ListeJeuxComponent}
 ];
 
 @NgModule({

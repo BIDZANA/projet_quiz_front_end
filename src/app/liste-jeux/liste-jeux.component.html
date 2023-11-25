@@ -39,53 +39,37 @@
     </svg>
 </div>
 <div>
-    <h1>Bienvenue admin</h1>
+    <h1>Voici la liste des jeux</h1>
 </div>
 <br>
 <br>
-<div class="admin">
-    <div class="badmin">
-        <div class="card" (click)="flipCard()">
-            <div class="card-inner">
-              <div class="front">
-                <img src="../assets/images/joueur.png" alt="Card Front" />
-              </div>
-              <div class="back">
-                <button class="bouton5" (click)="redirigerVersListeJoueurs()">liste des joueurs</button>
-              </div>
-            </div>
-        </div>
-        <div><h2>Joueurs</h2></div>
+<div class="bloc">
+    <div class="table-container">
+
+     
+      <table>
+        <thead>
+        <tr>
+          <th style="color: orange;">Noms</th> 
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>quizz sur le sport</td>
+        </tr>
+        <tr>
+            <td>quizz sur la culture générale</td>
+        </tr>
+        <tr>
+            <td>quizz sur l'histoire</td>
+        </tr>
+        <tr>
+            <td>quizz sur le cinéma</td>
+        </tr>
+        <tr>
+            <td>quizz sur la musique</td>
+        </tr>
+        </tbody>
+      </table>
     </div>
-    <div class="badmin">
-        <div class="card" (click)="flipCard()">
-            <div class="card-inner">
-              <div class="front">
-                <img src="../assets/images/party.png" alt="Card Front" />
-              </div>
-              <div class="back">
-                <button class="bouton5" (click)="redirigerVersListeJeux()">liste des jeux</button>
-              </div>
-            </div>
-        </div>
-        <div><h2>listes de jeux</h2></div>
-    </div>
-    <div class="badmin">
-        <div class="card" (click)="flipCard()">
-            <div class="card-inner">
-              <div class="front">
-                <img src="../assets/images/quizz.png" alt="Card Front" />
-              </div>
-              <div class="back">
-                <button class="bouton5" (click)="redirigerVersCreateQuizz()">Creer un quizz</button>
-              </div>
-            </div>
-        </div>
-        <div><h2>Creer un Quizz</h2></div>
-    </div>
-</div>
-
-
-
-  
-
+  </div>
