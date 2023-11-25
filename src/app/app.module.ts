@@ -20,6 +20,7 @@ import { CreateQuizzComponent } from './create-quizz/create-quizz.component';
 import { InterfaceAdminComponent } from './interface-admin/interface-admin.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { ListeJoueursComponent } from './liste-joueurs/liste-joueurs.component';
 
 
 @NgModule({
@@ -37,6 +38,7 @@ import { HttpClientModule } from '@angular/common/http';
     CreateQuestionsComponent,
     CreateQuizzComponent,
     InterfaceAdminComponent,
+    ListeJoueursComponent,
    
     
   ],
