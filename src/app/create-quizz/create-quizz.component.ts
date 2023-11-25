@@ -1,8 +1,7 @@
-// create-quizz.component.ts
-
 import { Component } from '@angular/core';
 import { QuizServiceService } from '../services/quiz/quiz-service.service';
 import { Quiz } from '../models/Quiz/quiz';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-create-quizz',
@@ -10,6 +9,7 @@ import { Quiz } from '../models/Quiz/quiz';
   styleUrls: ['./create-quizz.component.scss']
 })
 export class CreateQuizzComponent {
+
   isMenuOpen = false;
 
   // Modèle pour les données du formulaire
@@ -19,7 +19,7 @@ export class CreateQuizzComponent {
     image: ''
   };
 
-  constructor(private quizService: QuizServiceService) { }
+  constructor(private quizService: QuizServiceService, private router: Router) { }
 
   onSubmit() {
     console.log('Formulaire soumis avec les données suivantes :', this.formData);
@@ -45,6 +45,10 @@ export class CreateQuizzComponent {
     this.isMenuOpen = !this.isMenuOpen;
     console.log(this.isMenuOpen);
   }
+
+  redirigerVersQuestions() {
+    this.router.navigate(['/create-questions']);
+    }
 
   // Fonction de déconnexion
   logout() {

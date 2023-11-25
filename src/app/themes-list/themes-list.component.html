@@ -3,7 +3,9 @@
   <img
     width="90"
     alt="Quiz Logo"
-    src="../assets/images/png-clipart-quiz.png"/>
+    src="../assets/images/png-clipart-quiz.png"
+  />
+  <div><h1 *ngIf="username" class="welcome-message">Bienvenue, {{ username }} !</h1></div>
   <div class="user-icon" (click)="toggleMenu()">
     <img src="../assets/images/user.png" alt="User Avatar">
     <div class="user-menu" *ngIf="isMenuOpen">

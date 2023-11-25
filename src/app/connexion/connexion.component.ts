@@ -1,5 +1,14 @@
+// connexion.component.ts
+
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { User } from 'src/app/models/User/user';
+import { AuthentificationServiceService } from '../services/authentification/authentification-service.service';
+
+interface SignInResponse {
+  success: boolean;
+  message?: string;
+}
 
 @Component({
   selector: 'app-connexion',
@@ -7,21 +16,27 @@ import { Router } from '@angular/router';
   styleUrls: ['./connexion.component.scss']
 })
 export class ConnexionComponent {
-  formData = {
-    user_name: '',
-  };
+  formData: User = new User('', ''); // Initialisez avec un nouvel utilisateur
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private authService: AuthentificationServiceService) {}
 
   onSubmit() {
-    //TODO: Ajouter ici la logique pour envoyer les données du formulaire
-    console.log('Données soumises :', this.formData);
-    // Rediriger l'utilisateur vers la page de connexion
-    this.router.navigate(['/themes-list']);
+    this.authService.signIn(this.formData.email).subscribe(
+      (response: SignInResponse) => {
+        if (response.success) {
+          this.router.navigate(['/themes-list']);
+        } else {
+          console.error('Erreur de connexion :', response.message);
+        }
+      },
+      error => {
+        console.error('Une erreur s\'est produite lors de la connexion :', error);
+      }
+    );
   }
 
   redirigerVersThemes() {
-    // Redirigez l'utilisateur vers la page connexion (ajustez le chemin selon votre configuration)
+    // Redirigez l'utilisateur vers la page des thèmes
     this.router.navigate(['/themes-list']);
   }
 }

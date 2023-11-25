@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { AuthentificationServiceService } from '../services/authentification/authentification-service.service';
+import { User } from '../models/User/user';
 
 @Component({
   selector: 'app-inscription',
@@ -7,22 +9,27 @@ import { Router } from '@angular/router';
   styleUrls: ['./inscription.component.scss']
 })
 export class InscriptionComponent {
-  formData = {
-    user_name: '',
-    email: ''
-  };
+  formData: User = new User('', '');
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private authService: AuthentificationServiceService) {}
 
   onSubmit() {
-    //TODO: Ajouter ici la logique pour envoyer les données du formulaire
-    console.log('Données soumises :', this.formData);
-    // Rediriger l'utilisateur vers la page de connexion
-    this.router.navigate(['/connexion']);
+    // Utilisez le service d'authentification pour soumettre les données du formulaire
+    this.authService.signUp(this.formData).subscribe(
+      (response) => {
+        console.log('Inscription réussie :', response);
+        // Rediriger l'utilisateur vers la page de connexion
+        this.router.navigate(['/connexion']);
+      },
+      (error) => {
+        console.error('Erreur lors de l\'inscription :', error);
+        // Gérer l'erreur ici (afficher un message à l'utilisateur, par exemple)
+      }
+    );
   }
+
   redirigerVersConnexion() {
-    // Redirigez l'utilisateur vers la page connexion (ajustez le chemin selon votre configuration)
+    // Rediriger l'utilisateur vers la page connexion
     this.router.navigate(['/connexion']);
   }
 }
-
