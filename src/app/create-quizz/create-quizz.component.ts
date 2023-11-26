@@ -50,7 +50,7 @@ export class CreateQuizzComponent {
 
   redirigerVersQuestions() {
     this.router.navigate(['/create-questions']);
-    }
+  }
 
   // Fonction de déconnexion
   logout() {

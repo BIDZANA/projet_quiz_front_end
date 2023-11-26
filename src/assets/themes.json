@@ -1,0 +1,17 @@
+[
+    {
+      "image": "images/foot.png",
+      "background-color": "#6dddec60",
+      "quarter-circle":"",
+      "color": "#3498db",
+      "text": "Vous etes fan de foot, de basket et c'est un de vos loisrs?",
+      "title": "SPORT"
+    },
+    {
+      "image": "path/vers/image2.jpg",
+      "color": "#e74c3c",
+      "text": "#ffffff",
+      "title": "Theme 2"
+    }
+  ]
+  

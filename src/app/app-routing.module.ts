@@ -29,7 +29,10 @@ const routes: Routes = [
   {path: 'quizzmusique', component: QuizzMusiqueComponent},
   {path: 'create-questions', component: CreateQuestionsComponent},
   {path: 'create-quizz', component: CreateQuizzComponent},
-  {path: 'interfaceadmin', component: InterfaceAdminComponent}
+  {path: 'interface-admin', component: InterfaceAdminComponent},
+  {path: 'verification', component: VerificationComponent},
+  {path: 'liste-joueurs', component: ListeJoueursComponent},
+  {path: 'liste-jeux', component: ListeJeuxComponent}
  
 ];
 

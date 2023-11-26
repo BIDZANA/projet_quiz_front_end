@@ -382,9 +382,9 @@ body{
 .rectangle {
   width: 150%;
   height: 104%;
-  background-color: #6dddec60; /* Couleur du rectangle */
+  background-color: #6dddec60;
   border-radius: 0% 15% 10% 0%;
-  box-shadow: 5px 5px 18px #9eb1b1;;
+  box-shadow: 5px 5px 18px #9eb1b1;
   position: absolute;
   display: flex;
 
@@ -431,10 +431,11 @@ img {
 button[type="submit"]:hover {
   background-color: #ff4c3a; /* Couleur orangée pastel plus foncée */
 }
+
 .rectangle1 {
   width: 150%;
   height: 104%;
-  background-color: rgba(208, 114, 38, 0.38); /* Couleur du rectangle */
+  background-color: rgba(208, 114, 38, 0.38); 
   border-radius: 0% 15% 10% 0%;
   box-shadow: 5px 5px 18px #e0ae6b;;
   position: absolute;
@@ -447,8 +448,8 @@ button[type="submit"]:hover {
 
 .container1 {
   position: relative;
-  width: 300px; /* Largeur du rectangle */
-  height: 200px; /* Hauteur du rectangle */
+  width: 300px; 
+  height: 200px;
   top: 150px;
 }
 .quarter-circle1{
@@ -461,7 +462,7 @@ button[type="submit"]:hover {
 
 }
 .bouton1{
-  background-color: #ff8400; /* Couleur orangée pastel */
+  background-color: #ff8400; 
   color: rgba(10, 10, 10, 0.94);
   padding: 10px 20px;
   margin-left: 60%;
@@ -475,7 +476,7 @@ button[type="submit"]:hover {
 .rectangle2 {
   width: 150%;
   height: 104%;
-  background-color: rgba(96, 181, 213, 0.6); /* Couleur du rectangle */
+  background-color: rgba(96, 181, 213, 0.6); 
   border-radius: 0% 15% 10% 0%;
   box-shadow: 5px 5px 18px #6ba2e0;;
   position: absolute;
@@ -488,8 +489,8 @@ button[type="submit"]:hover {
 
 .container2 {
   position: relative;
-  width: 300px; /* Largeur du rectangle */
-  height: 200px; /* Hauteur du rectangle */
+  width: 300px; 
+  height: 200px; 
   top: 250px;
 }
 .quarter-circle2{
@@ -502,7 +503,7 @@ button[type="submit"]:hover {
 
 }
 .bouton2{
-  background-color: #cad9e3; /* Couleur orangée pastel */
+  background-color: #cad9e3;
   color: rgb(255, 255, 255);
   padding: 10px 20px;
   margin-left: 60%;
@@ -516,7 +517,7 @@ button[type="submit"]:hover {
 .rectangle3 {
   width: 150%;
   height: 104%;
-  background-color: rgba(205, 174, 211, 0.81); /* Couleur du rectangle */
+  background-color: rgba(205, 174, 211, 0.81);
   border-radius: 0% 15% 10% 0%;
   box-shadow: 5px 5px 18px #b16be0;;
   position: absolute;
@@ -528,8 +529,8 @@ button[type="submit"]:hover {
 
 .container3 {
   position: relative;
-  width: 300px; /* Largeur du rectangle */
-  height: 200px; /* Hauteur du rectangle */
+  width: 300px;  
+  height: 200px; 
   top: 350px;
 }
 .quarter-circle3{
@@ -542,7 +543,7 @@ button[type="submit"]:hover {
 
 }
 .bouton3{
-  background-color: #9b58b7; /* Couleur orangée pastel */
+  background-color: #9b58b7; 
   color: rgb(255, 255, 255);
   padding: 10px 20px;
   margin-left: 60%;
@@ -556,7 +557,7 @@ button[type="submit"]:hover {
 .rectangle4 {
   width: 150%;
   height: 104%;
-  background-color: rgba(229, 210, 116, 0.93); /* Couleur du rectangle */
+  background-color: rgba(229, 210, 116, 0.93); 
   border-radius: 0% 15% 10% 0%;
   box-shadow: 5px 5px 18px #c9b344;;
   position: absolute;
@@ -568,8 +569,8 @@ button[type="submit"]:hover {
 
 .container4 {
   position: relative;
-  width: 300px; /* Largeur du rectangle */
-  height: 200px; /* Hauteur du rectangle */
+  width: 300px; 
+  height: 200px; 
   top: 450px;
 }
 .quarter-circle4{
@@ -582,7 +583,7 @@ button[type="submit"]:hover {
 
 }
 .bouton4{
-  background-color: rgba(224, 214, 156, 0.99); /* Couleur orangée pastel */
+  background-color: rgba(224, 214, 156, 0.99); 
   color: rgba(10, 10, 10, 0.94);
   padding: 10px 20px;
   margin-left: 60%;

@@ -33,7 +33,7 @@ export class VerificationComponent implements OnInit {
     );
     // Redirection vers la page de thèmes après un délai de 3 secondes
     setTimeout(() => {
-      this.router.navigate(['/themes-list']);
+      this.router.navigate(['/connexion']);
     }, 3000);
   }
 }

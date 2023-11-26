@@ -17,6 +17,7 @@ export class ThemesListComponent implements OnInit {
   isMenuOpen = false;
   username: string | null = null;
   user: User | null = null;
+  themes: string[] = [];
 
   ngOnInit() {
     // Récupérer le nom d'utilisateur du localStorage

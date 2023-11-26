@@ -15,4 +15,10 @@ export class QuizServiceService {
     const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
     return this.http.post<Quiz>(this.apiUrl, quiz, { headers: headers });
   }
+
+  //Liste des thèmes déjà créés
+  getAllThemes(): Observable<string[]> {
+    const themesUrl = `${this.apiUrl}/listThemes`;
+    return this.http.get<string[]>(themesUrl);
+  }
 }

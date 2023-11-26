@@ -6,12 +6,6 @@ import { Observable } from 'rxjs';
 import { tap } from 'rxjs/operators';
 import { User } from 'src/app/models/User/user';
 
-interface SignInResponse {
-  success: boolean;
-  user?: User;
-}
-
-
 @Injectable({
   providedIn: 'root'
 })
@@ -20,7 +14,6 @@ export class AuthentificationServiceService {
   private isLoggedIn = false;
 
   constructor(private http: HttpClient) {
-    // Initialisez l'état de connexion à partir du stockage local lors du chargement du service
     this.isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
   }
 
@@ -29,15 +22,15 @@ export class AuthentificationServiceService {
     return this.http.post(signUpUrl, user);
   }
 
-  signIn(email: string): Observable<SignInResponse> {
-    const signInUrl = `${this.baseUrl}/signin?email=${email}`;
-    return this.http.get<SignInResponse>(signInUrl).pipe(
-      tap(response => {
-        if (response.success && response.user) {
+  signIn(username: string): Observable<User> {
+    const signInUrl = `${this.baseUrl}/signin?username=${username}`;
+    return this.http.get<User>(signInUrl).pipe(
+      tap(user => {
+        if (user) {
           this.isLoggedIn = true;
           localStorage.setItem('isLoggedIn', 'true');
-          localStorage.setItem('user', JSON.stringify(response.user));
-          console.log(response.user);
+          localStorage.setItem('user', JSON.stringify(user));
+          console.log(user);
         }
       })
     );
@@ -47,20 +40,17 @@ export class AuthentificationServiceService {
     return this.http.get<any>(`${this.baseUrl}/verification?token=${token}`);
   }
 
-  // Ajoutez une méthode pour obtenir l'utilisateur actuellement connecté
   getLoggedInUser(): User | null {
     const userJson = localStorage.getItem('user');
     return userJson ? JSON.parse(userJson) : null;
   }
 
-  // Ajoutez une méthode pour déconnecter l'utilisateur
   logout(): void {
     this.isLoggedIn = false;
     localStorage.removeItem('isLoggedIn');
     localStorage.removeItem('user');
   }
 
-  // Ajoutez une propriété pour vérifier l'état de connexion
   get isLoggedIn$(): boolean {
     return this.isLoggedIn;
   }
