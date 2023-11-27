@@ -1,1 +1,21 @@
 <p>quiz-game works!</p>
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+    <img
+      width="90"
+      alt="Quiz Logo"
+      src="../assets/images/png-clipart-quiz.png"
+    />
+</div>
+<div class="quiz-container">
+    <div class="question-card" *ngFor="let question of questions; let i = index" [@fadeInOut]="'inOut'">
+      <h3>{{ question.statement }}</h3>
+      <img *ngIf="question.image" [src]="question.image" alt="Question Image" class="question-image" />
+      <div class="response-options">
+        <button *ngFor="let response of responses" (click)="selectResponse(response)">
+          {{ response.value }}
+        </button>
+      </div>
+    </div>
+  </div>
+  

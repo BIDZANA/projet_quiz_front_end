@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Game } from 'src/app/models/Game/game';
+import { Question } from 'src/app/models/Question/question';
 
 @Injectable({
   providedIn: 'root'
@@ -32,5 +33,11 @@ export class GameServiceService {
 
   submitResponse(responseId: number): Observable<any> {
     return this.http.post(`${this.apiUrl}/submit-response`, { responseId });
+  }
+
+  // Récupérer toutes les questions pour un quiz donné
+  getQuestionsForQuiz(quizId: number): Observable<Question[]> {
+    const questionsUrl = `${this.apiUrl}/${quizId}/questions`;
+    return this.http.get<Question[]>(questionsUrl);
   }
 }
