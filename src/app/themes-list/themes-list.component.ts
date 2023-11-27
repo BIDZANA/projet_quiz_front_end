@@ -39,6 +39,7 @@ export class ThemesListComponent implements OnInit {
 
   logout() {
     this.authService.logout();
+    this.router.navigate(['/connexion']);
   }
   
   redirigerVersQuizzHistoire() {

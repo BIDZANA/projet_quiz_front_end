@@ -1,5 +1,5 @@
 export class Game {
-    id_game: number;
+    id_game?: number;
     date: Date;
     score: number;
     id_quiz: number;

@@ -14,9 +14,12 @@ export class CreateQuizzComponent {
 
   // Modèle pour les données du formulaire
   formData: Quiz = {
+    id_quiz: undefined,
     theme: '',
+    title: '',
     description: '',
-    image: ''
+    image: '',
+    level: ''
   };
 
   constructor(

@@ -15,6 +15,7 @@ import { InterfaceAdminComponent } from './interface-admin/interface-admin.compo
 import { ListeJoueursComponent } from './liste-joueurs/liste-joueurs.component';
 import { ListeJeuxComponent } from './liste-jeux/liste-jeux.component';
 import { VerificationComponent } from './verification/verification.component';
+import { QuizGameComponent } from './quiz-game/quiz-game.component';
 
 const routes: Routes = [
   { path: '', component: AccueilComponent},
@@ -32,7 +33,8 @@ const routes: Routes = [
   {path: 'interface-admin', component: InterfaceAdminComponent},
   {path: 'verification', component: VerificationComponent},
   {path: 'liste-joueurs', component: ListeJoueursComponent},
-  {path: 'liste-jeux', component: ListeJeuxComponent}
+  {path: 'liste-jeux', component: ListeJeuxComponent},
+  {path: 'quiz-game', component: QuizGameComponent}
  
 ];
 

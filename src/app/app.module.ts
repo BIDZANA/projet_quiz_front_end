@@ -23,6 +23,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ListeJoueursComponent } from './liste-joueurs/liste-joueurs.component';
 import { ListeJeuxComponent } from './liste-jeux/liste-jeux.component';
 import { VerificationComponent } from './verification/verification.component';
+import { QuizGameComponent } from './quiz-game/quiz-game.component';
 
 
 @NgModule({
@@ -40,6 +41,7 @@ import { VerificationComponent } from './verification/verification.component';
     CreateQuestionsComponent,
     CreateQuizzComponent,
     InterfaceAdminComponent,
+    QuizGameComponent,
    
     
   ],

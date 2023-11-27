@@ -37,9 +37,9 @@ p {
   color: white;
   font-weight: 600;
 
-  img{
+  img {
     height: 68%;
-    width: 7%;
+    width: 5%;
   }
 
   .user-icon {
@@ -363,8 +363,19 @@ svg#clouds {
   margin-left: auto;
 }
 
-.userimage1{
+#theme-bloc-presentation{
+  text-align: center;
+  padding-right: 30px;
+  width: 60%;
+  h1{
+    color: #125699;
+  };
+  h5{
+    color: #3d5a77;
+  }
+}
 
+.userimage1{
   width: 50px;
 }
 
