@@ -23,6 +23,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ListeJoueursComponent } from './liste-joueurs/liste-joueurs.component';
 import { ListeJeuxComponent } from './liste-jeux/liste-jeux.component';
 import { VerificationComponent } from './verification/verification.component';
+import { ReactiveFormsModule } from '@angular/forms';
 import { QuizGameComponent } from './quiz-game/quiz-game.component';
 
 
@@ -42,8 +43,7 @@ import { QuizGameComponent } from './quiz-game/quiz-game.component';
     CreateQuizzComponent,
     InterfaceAdminComponent,
     QuizGameComponent,
-   
-    
+  
   ],
   imports: [
     BrowserModule,
@@ -52,6 +52,7 @@ import { QuizGameComponent } from './quiz-game/quiz-game.component';
     FormsModule,
     MatIconModule, // Module des icônes
     MatMenuModule, // Module des menus
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

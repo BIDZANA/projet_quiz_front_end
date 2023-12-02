@@ -6,6 +6,7 @@ import { Game } from '../models/Game/game';
 import { Router } from '@angular/router';
 import { ResponseServiceService } from '../services/response/response-service.service';
 import { Response } from '../models/Response/response';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-quiz-game',
@@ -17,12 +18,17 @@ export class QuizGameComponent implements OnInit {
   responses: Response[] = [];
   currentQuestionIndex = 0; // Index to keep track of the current question
   game: Game | undefined;
+  quizForm: FormGroup = new FormGroup({});
+  timer: number = 60; // Temps initial en secondes
+  isMenuOpen = false;
+  srcImage: string = ''
 
   constructor(
     private router: Router,
-    private gameService: GameServiceService,
-    private quizService: QuizServiceService,
-    private responseService: ResponseServiceService
+    //private gameService: GameServiceService,
+    //private quizService: QuizServiceService,
+    //private responseService: ResponseServiceService,
+    private fb: FormBuilder
   ) { }
 
   ngOnInit(): void {
@@ -30,10 +36,11 @@ export class QuizGameComponent implements OnInit {
     // Retrieve the game from the navigation
     this.game = history.state.game;
 
-    // Check if the game is defined
-    if (!this.game) {
-      this.router.navigate(['/themes-list']);
-    } else {
+    
+    this.initializeForm();
+    this.startTimer();
+
+    /*
       // Get quizId from the route parameters
       const quizId = this.game.id_quiz;
 
@@ -47,7 +54,7 @@ export class QuizGameComponent implements OnInit {
           console.error('Error fetching questions:', error);
         }
       );
-    }
+    }*/
   }
 
   startGame(): void {
@@ -81,5 +88,47 @@ export class QuizGameComponent implements OnInit {
 
     // Move to the next question
     this.showNextQuestion();
+  }
+
+  initializeForm() {
+    this.quizForm = this.fb.group({
+      answer: ['']
+    });
+  }
+
+  startTimer() {
+    setInterval(() => {
+      this.timer--;
+      if (this.timer === 0) {
+        // Gérer le temps écoulé, par exemple, soumettre automatiquement le formulaire
+        this.submitForm();
+      }
+    }, 1000);
+  }
+
+  skipQuestion() {
+    alert("Question sautée !");
+    // Réinitialiser le formulaire si nécessaire
+    this.quizForm.reset();
+  }
+
+  validateAnswer() {
+    const selectedAnswer = this.quizForm?.get('answer')?.value;
+    if (selectedAnswer) {
+      alert("Réponse validée : " + selectedAnswer);
+      // Réinitialiser le formulaire si nécessaire
+      this.quizForm.reset();
+    } else {
+      alert("Veuillez sélectionner une réponse !");
+    }
+  }
+
+  submitForm() {
+    // Logique pour soumettre le formulaire, par exemple, valider la réponse
+    this.validateAnswer();
+  }
+  quit() {
+    // Rediriger l'utilisateur vers la page connexion
+    this.router.navigate(['/quizzhistoire']);
   }
 }

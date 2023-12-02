@@ -55,7 +55,7 @@ export class QuizzSportComponent implements OnInit {
     this.router.navigate(['/connexion']);
   }
 
-  goToAnotherPage(quiz: Quiz) {
+  goToQuiz(quiz: Quiz) {
     this.router.navigate(['/quiz-game'], { state: { quiz } });
   }
 
